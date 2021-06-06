@@ -1,1 +1,24 @@
-//This file you will create your mixins inside of the project
+@mixin laptop_view {
+    @media (max-width: #{$laptop_view} ) {
+        @content;
+    }
+} 
+
+@mixin tablet_view {
+    @media (max-width: #{$tablet_view} ) {
+        @content;
+    }
+}
+
+@mixin mobile_view {
+    @media (max-width: #{$mobile_view} ) {
+        @content;
+    }
+}
+
+
+@mixin tablet_view-min {
+    @media (min-width: #{$tablet_view} ) {
+        @content;
+    }
+}

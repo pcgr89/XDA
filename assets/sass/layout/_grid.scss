@@ -1,0 +1,41 @@
+.grid-container {
+  clear: both;
+  display: grid;
+  grid-template-columns: 1.8fr 0.2fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "info info header"
+    "form form-button header";
+}
+
+.header {
+  grid-area: header;
+  background:chartreuse
+}
+
+.info {
+  grid-area: info;
+}
+
+.form-button {
+  grid-area: form-button;
+}
+
+.form {
+  grid-area: form;
+  background-color: $smoky-black;
+}
+
+@include tablet_view {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "header header"
+        "info info"
+        "form form-button";
+        &__img {
+            // height: 14rem;
+            background-position: top;
+        }
+      }
+}

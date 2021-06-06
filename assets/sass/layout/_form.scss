@@ -1,0 +1,23 @@
+.form {
+    padding: 2rem 3rem;
+  
+  &__title {
+      font-family: $old-standard;
+      font-size: $xx-large;
+      font-weight: $fw-reg;
+      color: $white;
+      margin-bottom: 2rem;
+  }
+
+  &__label {
+      color: $white;
+      font-family: $old-standard;
+      font-size: $large;
+  }
+
+  &__input {
+      margin-top: 0.5rem;
+      padding: .5rem;
+      color: $smoky-black;
+  }
+}

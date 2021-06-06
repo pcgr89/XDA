@@ -1,1 +1,29 @@
-//This file you will create your style for buttons inside of the project
+.c-button {
+    background-color: $white;
+    padding: 0.5rem 2rem;
+    border: 2px solid $smoky-black;
+    font-family: $raleway;
+    font-size: $medium;
+    font-weight: $fw-bold;
+    cursor: pointer;
+
+}
+
+.form-button {
+    &__subscribe {
+        background-color: $white;
+        min-width: 100%;
+        min-height: 100%;
+        border: 0;
+        cursor: pointer;
+    }
+
+    &__btn-text {
+        transform: rotate(90deg);
+        display: block;
+        color: $smoky-black;
+        font-family: $old-standard;
+        font-size: $x-large;
+        font-weight: $fw-bold;
+    } 
+}

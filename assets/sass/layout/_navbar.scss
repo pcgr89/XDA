@@ -1,1 +1,98 @@
-//This file is for create your style with relation on space of navbar
+.navigation {
+
+    &__logo {
+        color: $white;
+        background-color: $smoky-black;
+        font-family: $old-standard;
+        width: 100px;
+        height: 90px;
+        font-weight: $fw-bold;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: $xx-large;
+    }
+    &__container {
+        max-height: 0;
+        padding: 0.5rem;
+        overflow: hidden;
+        
+        
+    }
+
+    &__item {
+        list-style: none;
+        display: block;
+        padding: 0.5rem;
+        a {
+            text-decoration: none;
+            text-align: center;
+            font-family: $raleway;
+            color: $smoky-black;
+            font-weight: $fw-bold;
+        }
+    }
+}
+
+.collapsible {
+    text-align: right;
+    label {
+        display: block;
+        padding: 2rem 1rem 0rem 1rem;
+        font-size: 1.8rem;
+    }
+}
+
+#menu {
+    display: none;
+}
+
+input:checked ~ .navigation__container {
+    max-height: 100%;
+}
+
+.main {
+    h1 {
+        text-transform: uppercase;
+        font-family: $old-standard;
+        font-weight: $fw-bold;
+        font-size: 3em;
+        padding: .5rem;
+    }
+
+    &__paragraph {
+        color: $quick-silver;
+        font-size: 1.1em;
+        line-height: 1.75em;
+        padding: .5rem;
+    }
+}
+
+@include tablet_view_min {
+    .collapsible {
+        label {
+            display: none;
+
+        }
+    }
+
+    .navigation {
+        &__container {
+            overflow: visible;
+            display: block;
+            padding-top: 0rem;
+        }
+
+        &__list {
+            display: flex;
+            justify-content: flex-end;
+            height: 90px;
+        }
+
+        &__item {
+            align-self: center;
+            padding: 1rem;
+        }
+    }
+}

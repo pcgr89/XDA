@@ -1,0 +1,18 @@
+.info {
+    padding: 3rem;
+    &__title {
+        font-size: $xxx-large;
+        font-family: $old-standard;
+        text-transform: uppercase;
+        font-weight: $fw-bold;
+        line-height: 3.5rem;
+        margin-bottom: 1rem;
+    }
+
+    &__text {
+        font-size: $large;
+        color: $granite-gray;
+        line-height: 2rem;
+        margin-bottom: 2rem;
+    }
+}

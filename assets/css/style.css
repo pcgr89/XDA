@@ -1,0 +1,260 @@
+@charset "UTF-8";
+.c-button {
+  background-color: #fff;
+  padding: 0.5rem 2rem;
+  border: 2px solid #0c0910;
+  font-family: "Raleway",  sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.form-button__subscribe {
+  background-color: #fff;
+  min-width: 100%;
+  min-height: 100%;
+  border: 0;
+  cursor: pointer;
+}
+.form-button__btn-text {
+  transform: rotate(90deg);
+  display: block;
+  color: #0c0910;
+  font-family: "Old Standard TT",  serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+:root {
+  font-family: "Raleway",  sans-serif;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.grid-container {
+  clear: both;
+  display: grid;
+  grid-template-columns: 1.8fr 0.2fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "info info header" "form form-button header";
+}
+
+.header {
+  grid-area: header;
+  background: chartreuse;
+}
+
+.info {
+  grid-area: info;
+}
+
+.form-button {
+  grid-area: form-button;
+}
+
+.form {
+  grid-area: form;
+  background-color: #0c0910;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header header" "info info" "form form-button";
+  }
+  .grid-container__img {
+    background-position: top;
+  }
+}
+.navigation__logo {
+  color: #fff;
+  background-color: #0c0910;
+  font-family: "Old Standard TT",  serif;
+  width: 100px;
+  height: 90px;
+  font-weight: 700;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+.navigation__container {
+  max-height: 0;
+  padding: 0.5rem;
+  overflow: hidden;
+}
+.navigation__item {
+  list-style: none;
+  display: block;
+  padding: 0.5rem;
+}
+.navigation__item a {
+  text-decoration: none;
+  text-align: center;
+  font-family: "Raleway",  sans-serif;
+  color: #0c0910;
+  font-weight: 700;
+}
+
+.collapsible {
+  text-align: right;
+}
+.collapsible label {
+  display: block;
+  padding: 2rem 1rem 0rem 1rem;
+  font-size: 1.8rem;
+}
+
+#menu {
+  display: none;
+}
+
+input:checked ~ .navigation__container {
+  max-height: 100%;
+}
+
+.main h1 {
+  text-transform: uppercase;
+  font-family: "Old Standard TT",  serif;
+  font-weight: 700;
+  font-size: 3em;
+  padding: 0.5rem;
+}
+.main__paragraph {
+  color: #a6a5a8;
+  font-size: 1.1em;
+  line-height: 1.75em;
+  padding: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .collapsible label {
+    display: none;
+  }
+
+  .navigation__container {
+    overflow: visible;
+    display: block;
+    padding-top: 0rem;
+  }
+  .navigation__list {
+    display: flex;
+    justify-content: flex-end;
+    height: 90px;
+  }
+  .navigation__item {
+    align-self: center;
+    padding: 1rem;
+  }
+}
+.header {
+  background: url("../img/imagen1.png");
+  background-size: cover;
+  background-position: top center;
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 19rem;
+    background-position: top;
+  }
+}
+@media (max-width: 576px) {
+  .header {
+    height: 14rem;
+    background-position: top;
+  }
+}
+.info {
+  padding: 3rem;
+}
+.info__title {
+  font-size: 50px;
+  font-family: "Old Standard TT",  serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 3.5rem;
+  margin-bottom: 1rem;
+}
+.info__text {
+  font-size: 18px;
+  color: #646266;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.form {
+  padding: 2rem 3rem;
+}
+.form__title {
+  font-family: "Old Standard TT",  serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.form__label {
+  color: #fff;
+  font-family: "Old Standard TT",  serif;
+  font-size: 18px;
+}
+.form__input {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  color: #0c0910;
+}
+
+/*# sourceMappingURL=style.css.map */
