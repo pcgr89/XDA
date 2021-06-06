@@ -1,4 +1,4 @@
-.c-button {
+.primary-button {
     background-color: $white;
     padding: 0.5rem 2rem;
     border: 2px solid $smoky-black;
@@ -6,6 +6,14 @@
     font-size: $medium;
     font-weight: $fw-bold;
     cursor: pointer;
+    &:hover {
+        border: 2px solid $isabelline;
+    }
+
+    &:focus {
+        border: 2px solid $isabelline;
+        color: $light-gray;
+    }
 
 }
 

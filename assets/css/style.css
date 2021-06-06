@@ -1,30 +1,4 @@
 @charset "UTF-8";
-.c-button {
-  background-color: #fff;
-  padding: 0.5rem 2rem;
-  border: 2px solid #0c0910;
-  font-family: "Raleway",  sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.form-button__subscribe {
-  background-color: #fff;
-  min-width: 100%;
-  min-height: 100%;
-  border: 0;
-  cursor: pointer;
-}
-.form-button__btn-text {
-  transform: rotate(90deg);
-  display: block;
-  color: #0c0910;
-  font-family: "Old Standard TT",  serif;
-  font-size: 20px;
-  font-weight: 700;
-}
-
 :root {
   font-family: "Raleway",  sans-serif;
 }
@@ -83,10 +57,14 @@ table {
   border-spacing: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Old Standard TT",  serif;
+}
+
 .grid-container {
   clear: both;
   display: grid;
-  grid-template-columns: 1.8fr 0.2fr 1fr;
+  grid-template-columns: 1.8fr 0.2fr 2fr;
   gap: 0px 0px;
   grid-template-areas: "info info header" "form form-button header";
 }
@@ -147,6 +125,9 @@ table {
   font-family: "Raleway",  sans-serif;
   color: #0c0910;
   font-weight: 700;
+}
+.navigation__item a:hover {
+  color: #a6a5a8;
 }
 
 .collapsible {
@@ -250,11 +231,47 @@ input:checked ~ .navigation__container {
   color: #fff;
   font-family: "Old Standard TT",  serif;
   font-size: 18px;
+  display: block;
 }
-.form__input {
+
+.primary-button {
+  background-color: #fff;
+  padding: 0.5rem 2rem;
+  border: 2px solid #0c0910;
+  font-family: "Raleway",  sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.primary-button:hover {
+  border: 2px solid #ececec;
+}
+.primary-button:focus {
+  border: 2px solid #ececec;
+  color: #d1d1d1;
+}
+
+.form-button__subscribe {
+  background-color: #fff;
+  min-width: 100%;
+  min-height: 100%;
+  border: 0;
+  cursor: pointer;
+}
+.form-button__btn-text {
+  transform: rotate(90deg);
+  display: block;
+  color: #0c0910;
+  font-family: "Old Standard TT",  serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+input {
   margin-top: 0.5rem;
   padding: 0.5rem;
   color: #0c0910;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

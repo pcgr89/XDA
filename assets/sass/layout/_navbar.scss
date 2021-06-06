@@ -1,5 +1,4 @@
 .navigation {
-
     &__logo {
         color: $white;
         background-color: $smoky-black;
@@ -13,12 +12,11 @@
         align-items: center;
         font-size: $xx-large;
     }
+
     &__container {
         max-height: 0;
         padding: 0.5rem;
-        overflow: hidden;
-        
-        
+        overflow: hidden;    
     }
 
     &__item {
@@ -31,6 +29,10 @@
             font-family: $raleway;
             color: $smoky-black;
             font-weight: $fw-bold;
+
+            &:hover {
+                color: $quick-silver;
+            }
         }
     }
 }
